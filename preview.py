@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    with open('README.md', 'r') as markdown_file:
+    with open('cs_tutor.md', 'r') as markdown_file:
         content = markdown_file.read()
         html_content = markdown.markdown(content)
         return render_template_string('''
