@@ -1,0 +1,15 @@
+# openai
+# python-dotenv
+# panel
+# jupyter_bokeh
+# langchain 
+# docarray  
+# tiktoken
+
+# 下面是为了支持 preview 安装的依赖
+# flask
+# markdown
+
+Werkzeug==2.2.2
+Flask==2.2.2
+markdown
