@@ -32,3 +32,6 @@
 *.tar.gz 
 
 t20_临时文件_如何切割与恢复ollama.sh
+
+# 这是用于ollama pull 某个模型以后_该目录下至少有几百M的模型blob文件
+d28_model_all/
