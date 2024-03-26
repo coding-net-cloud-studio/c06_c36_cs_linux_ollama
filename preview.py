@@ -3,7 +3,13 @@
 from flask import Flask, render_template_string
 import markdown
 
-app = Flask(__name__)
+# app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder='.',  # 表示在当前目录 (myproject/A/) 寻找模板文件
+    static_folder='',     # 空 表示为当前目录 (myproject/A/) 开通虚拟资源入口
+    static_url_path='',
+)
 
 @app.route('/')
 def home():

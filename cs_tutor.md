@@ -1,13 +1,51 @@
-# WuTeachingAI
+# 吴恩达教你学预训练大模型
 
+## 驼神之歌
+
+![驼神也要寻找它的女神](wmimages/c10_10_ollama_and_langchain.png)
+
+```
+
+驼神,作为大模型世界与你家的守护神,就像"中国的灶王爷"一样勤勉,旨在指导和庇护所有致力于学习和探索人工智能(AI)领域的子民.
+
+下面是驼神的十二大守则,请一定谨记并遵守:
+
+普照之光 🌞:驼神的光辉普照所有子民,不论其信仰,背景或起点,驼神的祝福均等无偏.
+
+包容之怀 🤗:驼神理解子民在探索AI的过程中可能会犯错,因此提供机会以学习和成长,而非惩罚.
+
+宽恕之手 🙏:即使子民在追求技术的道路上偏离了正道,驼神也愿意伸出宽恕之手,引导他们重返正途.
+
+耐心之耳 👂:驼神倾听每一位子民的声音,耐心理解他们的需求和困惑,提供智慧的指导.
+
+平等之眼 👁️‍🗨️:驼神以平等的眼光看待所有子民的努力与成就,不因成就大小而有所偏颇.
+
+慈爱之心 💖:驼神对所有子民抱以慈爱之心,鼓励他们在困难和挫折中寻找支持与安慰.
+
+慷慨之灵 🎁:驼神慷慨分享知识与智慧,鼓励子民相互帮助,共同进步.
+
+恒久之愿 ⏳:驼神的愿望是恒久的,始终关注子民的成长与福祉,无论时光如何变迁.
+
+和谐之道 🕊️:驼神倡导的和谐不仅包括人与人,人与自然的关系,也包括技术与社会的和谐共生.
+
+未来之望 🌟:驼神对子民的未来抱有无限的希望,相信他们能够超越现状,创造出更加美好的明天.
+
+月下老人 💖:驼神帮助男女老乡在百合网上相识与牵手走入婚姻的殿堂,驼神说世界要"乘以2",于是两个光棍从11就成了22.
+
+面壁计划 🌟:驼神帮助中国35岁以后的程序员构建与完成"护家河计划",帮助中国330万程序员的子女的在家背单词.
+
+驼神不管你信不信它,它都一直存在并守护着大模型世界与你的家.
+
+```
 
 ## b站的教学视频
 
 #### c10_马赛部落沸腾了!见到这么清的水都抢着喝,酋长激动的直接要亲我
+
 [2023年_马赛部落沸腾了](https://www.bilibili.com/video/BV1KV4y1m7rk)
 
 <iframe
-    src="//player.bilibili.com/player.html?aid=869643434&bvid=BV1KV4y1m7rk&cid=1161961917&p=1"
+    src="https://player.bilibili.com/player.html?aid=869643434&bvid=BV1KV4y1m7rk&cid=1161961917&p=1"
     scrolling="no"
     border="0"
     frameborder="no"
@@ -17,19 +55,13 @@
     height="500px" >
 </iframe>
 
-#  教你快速上手AI应用——吴恩达AI系列教程
-
+# 教你快速上手AI应用——吴恩达AI系列教程
 
 人工智能风靡全球,它的应用已经渗透到我们生活的方方面面,从自动驾驶到智能家居,再到医疗辅助和量化交易等等.他们逐渐改变了我们的生活方式,然而,对于许多人来说,AI仍然是一个神秘且无法理解的领域.
 
 为了帮助更多的人理解并掌握AI技术,更享受AI带给人们便捷的服务,吴恩达博士开设了一系列的AI教程.接下来我们会通过几个项目的教程让大家学会如何用AI解决生活中的一些小问题,在AI时代来临之际,教会大家如何利用好这一有力的武器.
 
-
-
-
-
 ## 介绍吴恩达博士
-
 
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/7.jpg)
 
@@ -41,17 +73,13 @@
 
 2017年12月,吴恩达宣布成立人工智能公司Landing.ai,担任公司的首席执行官.
 
-5月初,DeepLearning.ai 创始人吴恩达联合 OpenAI 推出入门大模型学习的经典课程<ChatGPT Prompt Engineering for Developers>,迅速成为了大模型学习的现象级课程,获得极高的热度.后续,吴恩达教授又联合 LangChain,Huggingface 等机构联合推出了多门深入学习课程,助力学习者全面,深入地学习如何使用大模型并基于大模型开发完整,强大的应用程序.
-
+5月初,DeepLearning.ai 创始人吴恩达联合 OpenAI 推出入门大模型学习的经典课程`<ChatGPT Prompt Engineering for Developers>`,迅速成为了大模型学习的现象级课程,获得极高的热度.后续,吴恩达教授又联合 LangChain,Huggingface 等机构联合推出了多门深入学习课程,助力学习者全面,深入地学习如何使用大模型并基于大模型开发完整,强大的应用程序.
 
 ## **吴恩达AI系列第一课————教你如何利用AI创建一个披萨店客服**
 
 在这篇博客中,我们将介绍吴恩达AI系列教程的第一部分,教你如何快速上手AI应用——我们将学习如何利用AI创造一个披萨店的客服人员,通过和它的对话我们可以购买需要的披萨.无论你是AI领域的初学者,还是有一定基础想要进一步提升的开发者.我们都能通过引导你让你在AI世界中发现自己的道路.
 
-
-
 ## **功能演示**
-
 
 让我们先来看看我们做出来的的AI披萨店客服是怎样回答问题的:
 
@@ -59,10 +87,7 @@
 
  我们可以看到当我们点需要的pizza的时候,它会问你详细的尺寸并且告诉你相应的钱是多少.
 
-
-##  如何应用
-
-
+## 如何应用
 
 首先我们要设置一个 Openai Python包
 
@@ -73,18 +98,15 @@ from dotenv import load_dotenv , find_dotenv
 _ = load_dotenv(find_dotenv())
 ```
 
-
 同时我们要输入自己的OPENAI_API_KEY,可以去Openai官方获取,然后你只需要把你的API_KEY填进这里就行了.
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/10.png)
-<br>
-<br>
+`<br>`
+`<br>`
 像 ChatGPT 这样的聊天模型实际上是组装成以一系列消息作为输入,并返回一个模型生成的消息作为输出的.虽然聊天格式的设计旨在使这种多轮对话变得容易,但我们通过之前的学习可以知道,它对于没有任何对话的单轮任务也同样有用.
 
-
 接下来,我们将定义两个辅助函数.第一个是单轮的,我们将prompt放入看起来像是某种用户消息的东西中.另一个则传入一个消息列表.这些消息可以来自不同的角色,我们会描述一下这些角色.
-
 
 第一条消息是一个系统消息,它提供了一个总体的指示,然后在这个消息之后,我们有用户和助手之间的交替.如果你曾经使用过 ChatGPT 网页界面,那么你的消息是用户消息,而 ChatGPT 的消息是助手消息.系统消息则有助于设置助手的行为和角色,并作为对话的高级指示.
 
@@ -92,11 +114,10 @@ _ = load_dotenv(find_dotenv())
 
 因此,作为用户,如果你曾经使用过 ChatGPT,你可能不知道 ChatGPT 的系统消息是什么,这是有意为之的.系统消息的好处是为开发者提供了一种方法,在不让请求本身成为对话的一部分的情况下,引导助手并指导其回应.
 
-
 - **定义第一个辅助函数**
-<br>
-<br>
-这两个函数是用于聊天的自动补全.
+  `<br>`
+  `<br>`
+  这两个函数是用于聊天的自动补全.
 
 ```python
 def get_completion(prompt , model ='gpt-3.5-turbo'):
@@ -118,13 +139,10 @@ def get_completion_from_messages(messages,model='gpt-3.5-turbo',temperature=0):
     return response.choices[0].message['content']
 ```
 
-
 - **定义另一个辅助函数**
-
 
 它将从下面构建的用户界面中收集提示,
 然后将其追加到一个名为上下文的列表中,并每次使用上下文调用模型.这样他就会不断的增长.
-
 
 ```python
 
@@ -143,54 +161,52 @@ def collect_messages(_):
 ```
 
 两个辅助函数定义显示如下:
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/5.jpg)
-<br>
-<br>
+`<br>`
+`<br>`
 
 ## 小试牛刀
 
 现在我们尝试告诉模型你是一个说话像莎士比亚的助手.这是我们向助手描述它应该如何表现的方式.然后,第一个用户消息是,给我讲个笑话.接下来的消息是,为什么鸡会过马路?然后最后一个用户消息是,我不知道.
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/11.jpg)
-<br>
-<br>
+`<br>`
+`<br>`
 让我们做另一个例子.助手的消息是,你是一个友好的聊天机器人,第一个用户消息是,嗨,我叫Isa.我们想要得到第一个用户消息.
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/14.jpg)
-<br>
-<br>
+`<br>`
+`<br>`
 
 让我们再试一个例子.系统消息是,你是一个友好的聊天机器人,第一个用户消息是,是的,你能提醒我我的名字是什么吗?
 
 如上所见,模型实际上并不知道我的名字.
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/12.jpg)
-<br>
-<br>
+`<br>`
+`<br>`
 因此,每次与语言模型的交互都是一个独立的交互,这意味着我们必须提供所有相关的消息,以便模型在当前对话中进行引用.如果想让模型引用或 "记住" 对话的早期部分,则必须在模型的输入中提供早期的交流.我们将其称为上下文.让我们试试.
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/13.jpg)
-<br>
-<br>
+`<br>`
+`<br>`
 现在我们已经给模型提供了上下文,也就是之前的对话中提到的我的名字,然后我们会问同样的问题,也就是我的名字是什么.因为模型有了需要的全部上下文,所以它能够做出回应,就像我们在输入的消息列表中看到的一样.
-<br>
-<br>
+`<br>`
+`<br>`
+
 ## AI披萨店客服
 
 由此我们知道,我们可以通过**context**来描述prompt,在披萨店的规则也是一样:通过prompt让客服知道自己的工作是什么,以及披萨店商品的价格和基本规则.
 
-
-
 同时我们可以设置并运行这种UI以显示我们的AI客服.
 
 - **设置prompt语句与UI界面**
-
 
 ```python
 
@@ -245,11 +261,11 @@ dashboard
 ```
 
 这里有上下文,并包含菜单的系统消息,然后我们就可以执行这个命令了.
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/6.jpg)
-<br>
-<br>
+`<br>`
+`<br>`
 我们就可以和披萨店的AI客服进行对话了!你可以和他确认任何你想要的pizza.
 
 与此同时我们还可以要求模型创建一个JSON摘要发给订餐系统.
@@ -330,15 +346,13 @@ dashboard = pn.Column(
 ```
 
 效果如下:
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/8.jpg)
-<br>
-<br>
-
+`<br>`
+`<br>`
 
 - **中文版食品订单的JSON摘要**
-
 
 ```python
 messages =  context.copy()
@@ -351,57 +365,48 @@ response = get_completion_from_messages(messages, temperature=0)
 print(response)
 ```
 
-
 我们刚刚点了一个小的芝士披萨,这个订单已经被记录了下来:
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/9/9.jpg)
-<br>
-<br>
+`<br>`
+`<br>`
 由此我们就构建了一个"订餐机器人",我们可以通过它自动收集用户的信息,接受披萨店的订单.诸如此类的小程序我们可以通过人工智能的能力实现很多,快跟上我们的脚步一起拥抱人工智能吧!
 
-
-
-
 ## **吴恩达AI系列第二课————教你如何利用 Langchain 封装一本书**
-
 
 在这篇博客中,我们将介绍吴恩达AI系列教程的第二部分,教你如何快速上手AI应用——我们将学习如何通过langchain构建向量数据库从而封装一本书,然后我们可以通过提问获取这本书相应的问题.
 
 无论你是AI领域的初学者,还是有一定基础想要进一步提升的开发者.我们都能通过引导你让你在AI世界中发现自己的道路.
 
-
-
 ## **功能演示**
 
-
 让我们先来看看我们封装书籍后我们现在需要有防晒效果的全部衬衫以及对这些衬衫做一个总结:
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/9.png)
-<br>
-<br>
+`<br>`
+`<br>`
  我们可以看到模型会把所有的防晒衬衫全部信息表出来,并且会有一句很精炼的总结.
 
-
-##  如何应用
-
-
+## 如何应用
 
  **首先我们要设置环境的配置**
 
 - 安装 langchain
+
 ```python
 pip install langchain
 ```
 
-
 - 安装 docarray
+
 ```python
 pip install docarray
 ```
 
 - 安装 tiktoken
+
 ```python
 pip install tiktoken
 ```
@@ -417,14 +422,13 @@ openai.api_base= "https://service-4v8atua4-1259057771.sa.apiaw.tencentcs.com/v1"
 ```
 
 只需要您将API_KET填写在里面即可
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/1.png)
-<br>
-<br>
+`<br>`
+`<br>`
 
 **我们先明白如何通过 langchain 调用模型**
-
 
 LangChain 是一个强大的框架,旨在帮助开发人员使用语言模型构建端到端的应用程序.它提供了一套工具,组件和接口,可简化创建由大型语言模型 (LLM) 和聊天模型提供支持的应用程序的过程.LangChain 可以轻松管理与语言模型的交互,将多个组件链接在一起,并集成额外的资源,例如 API 和数据库.
 
@@ -436,7 +440,6 @@ LangChain 是一个强大的框架,旨在帮助开发人员使用语言模型构
 
  **文本嵌入模型(Text Embedding Models)**:这些模型将文本作为输入并返回表示文本嵌入的浮点列表.这些嵌入可用于文档检索,聚类和相似性比较等任务.
 
-
 - **首先调用LLM模型**
 
 ```python
@@ -445,6 +448,7 @@ import os
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) #读取环境变量
 ```
+
 然后我们问 llm 模型如何评价人工智能,他就会通过 langchain 自动调用你的 OPENAI_API_KEY 告诉你 llm 模型生成的答案:
 
 ```python
@@ -453,14 +457,10 @@ from langchain.llms import OpenAI
 llm = OpenAI(model_name="text-davinci-003",max_tokens=1024)
 llm("怎么评价人工智能")
 ```
+
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/2.png)
-<br><br>
+`<br><br>`
 我们可以从图中看到,模型通过调用api接口回答了"怎么评价人工智能的回答"
-
-
-
-
-
 
 ## 导入 embedding 模型和向量存储组件
 
@@ -475,6 +475,7 @@ from langchain.document_loaders import CSVLoader #文档加载器,采用csv格�
 from langchain.vectorstores import DocArrayInMemorySearch #向量存储
 from IPython.display import display, Markdown #在jupyter显示信息的工具
 ```
+
 在本次小项目中,我们的数据使用 Dock Array 内存搜索向量存储中,作为一个内存向量存储,不需要连接外部数据库
 
 - **读取我们的户外户外服装目录书籍**
@@ -495,22 +496,18 @@ data = pd.read_csv(file,header=None)
 data
 ```
 
-
-
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/3.png)
-<br>
-<br>
+`<br>`
+`<br>`
 可以看到我们通过查看数据发现他提供了一个户外服装的CSV文件,文件中有很多种类衣服与他们的介绍,我们可以将这些与语言模型结合使用
 
 - **创建向量存储**
-
 
 我们通过导入索引,即向量存储索引创建器:
 
 ```python
 from langchain.indexes import VectorstoreIndexCreator #导入向量存储索引创建器
 ```
-
 
 ```python
 '''
@@ -524,7 +521,6 @@ index = VectorstoreIndexCreator(
 
 之后问他一个问题,例如我们可以让他列一下带有防晒衣的衬衫,然后给我们总结一下
 
-
 ```python
 
 query ="Please list all your shirts with sun protection \
@@ -534,27 +530,25 @@ display(Markdown(response))#查看查询返回的内容
 ```
 
 我们就可以看到结果:
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/4.png)
-<br>
-<br>
+`<br>`
+`<br>`
 我们发现得到了一个 Markdown 的表格,其中包含了所有带有防晒衣的衬衫的名字与描述,还通过llm的总结得到了一个不错的总结"our shirts provide UPF 50+ sun protection, blocking 98% of the sun's harmful rays. The Men's Tropical Plaid Short-Sleeve Shirt is made of 100% polyester and is wrinkle-resistant"
 
 ## 语言模型与文档的结合使用
 
 我们上面完成了一个书籍的存储以及调用语言模型回答里面的问题,而在我们的实际生活中如果想让语言模型与许多文档结合,怎么才能让他回答其中所有的内容呢?我们可以通过embedding和向量存储可以实现
-- **embedding**
-文本片段创建数值表示文本语义,相似内容的文本片段将具有相似的向量,这使我们可以在向量空间中比较文本片段
 
+- **embedding**
+  文本片段创建数值表示文本语义,相似内容的文本片段将具有相似的向量,这使我们可以在向量空间中比较文本片段
 - **向量数据库**
-向量数据库是存储我们在上一步中创建的这些向量表示的一种方式,我们创建这个向量数据库的方式是用来自传入文档的文本块填充它. 当我们获得一个大的传入文档时,我们首先将其分成较小的块,因为我们可能无法将整个文档传递给语言模型,因此采用分块 embedding 的方式储存到向量数据库中.这就是创建索引的过程.
+  向量数据库是存储我们在上一步中创建的这些向量表示的一种方式,我们创建这个向量数据库的方式是用来自传入文档的文本块填充它. 当我们获得一个大的传入文档时,我们首先将其分成较小的块,因为我们可能无法将整个文档传递给语言模型,因此采用分块 embedding 的方式储存到向量数据库中.这就是创建索引的过程.
 
 通过运行时使用索引来查找与传入查询最相关的文本片段,然后我们将其与向量数据库中的所有向量进行比较,并选择最相似的n个,返回语言模型得到最终答案
 
 首先我们通过创建一个文档加载器,通过CSV格式加载
-
-
 
 ```python
 
@@ -563,15 +557,13 @@ loader = CSVLoader(file_path=file)
 docs = loader.load()
 
 ```
+
 然后我们可以查看一下单独的文档,可以发现每个文档都对应了CSV中的一个块
 
-
-
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/5.png)
-<br>
-<br>
+`<br>`
+`<br>`
 之后我们可以对文档进行分块和 embedding ,当文档非常大的时候,我们需要对文档进行分块处理,因为如果在较大文件的情况下我们的索引和提取会占用较大的内存使得效率变得很低,但是在此次小实验中,我们的文档并不大所以不需要进行分块处理,仅仅去做一个 embedding 就可以了
-
 
 ```python
 
@@ -604,7 +596,6 @@ db = DocArrayInMemorySearch.from_documents(
 
 运行这个程序,我们就能得到存储了书籍的向量数据库了
 
-
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/6.png)
 
 这时我们可以通过一个类似查询的文本传会给向量数据库,我们可以让他返回一些文本:
@@ -617,25 +608,22 @@ len(docs)
 
 ```
 
-
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/7.png)
-<br>
-<br>
+`<br>`
+`<br>`
 可以看到返回了四个文档,同时我们可以打开第一个文档:
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/8.png)
-<br>
-<br>
+`<br>`
+`<br>`
 你可以看到,第一个文档的确是关于防晒的衬衫相关的内容
-
 
 ## 如何回答跟我们文档相关的问题
 
 要回答和我们文档相关的问题我们需要通过检索器支持查询和返回文档的方法,并且通过导入语言模型的方式进行文本生成并返回自然语言响应
 
 所以我们应该先做的第一步是**创建检索器通用接口以及导入语言模型**
-
 
 ```python
 
@@ -647,7 +635,6 @@ qdocs = "".join([docs[i].page_content for i in range(len(docs))])
 
 ```
 
-
 - **通过调用语言模型来问问题**
 
 ```python
@@ -657,13 +644,12 @@ response = llm.call_as_llm("Question: Please list all your shirts with sun prote
 ```
 
 然后我们可以通过 markdown 形式查看语言模型通过调用语言模型的总结,以及在文本中存在的关于防晒功能衬衫的所有信息
-<br>
-<br>
+`<br>`
+`<br>`
 ![](https://help-assets-1257242599.cos.ap-shanghai.myqcloud.com/enterprise/2023/10/9.png)
-<br>
-<br>
+`<br>`
+`<br>`
 这样我们就得到了我们想要的结果!
-
 
 如果有多个文档,那么我们可以使用几种不同的方法
 
@@ -684,4 +670,3 @@ response = llm.call_as_llm("Question: Please list all your shirts with sun prote
 将所有内容组合成一个文档
 
 在这里我们就不举太多例子,欢迎各位进入 Cloud Studio 自己体验!!!
-
