@@ -33,5 +33,9 @@
 
 t20_临时文件_如何切割与恢复ollama.sh
 
+# NOTE 这是由大约282个分片文件_复合以后_生成的_ollam文件
+# 复合以后_被移动到这里
+/ollama
+
 # 这是用于ollama pull 某个模型以后_该目录下至少有几百M的模型blob文件
 d28_model_all/
