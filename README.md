@@ -1,0 +1,1 @@
+# c06_c36_cs_linux_ollama
