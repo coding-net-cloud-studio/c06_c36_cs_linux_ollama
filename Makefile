@@ -14,6 +14,7 @@ default: wmtask_runonce_set_env
 	@echo "我啥都不做_怕出错"
 	@echo "使用帮助信息"
 	@echo "make               : 尝试用ollam运行千问qwen:0.5b模型"
+	@echo "make show          : 展示几个不同的目录下_占用的存储情况"
 
 # ---------------------------------------------------------------------------------------
 
@@ -32,3 +33,4 @@ help:
 	@echo "我啥都不做_怕出错"
 	@echo "使用帮助信息"
 	@echo "make               : 尝试用ollam运行千问qwen:0.5b模型"
+	@echo "make show          : 展示几个不同的目录下_占用的存储情况"

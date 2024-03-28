@@ -295,6 +295,29 @@ l68_get_message_from_ollama_run_model_qwen_0_5_b(){
 
 # -------------------------------------------------------------------
 
+# NOTE 展示一下各个空间的占用情况
+l78_du_root_and_workspace(){
+  if [[ -d /workspace ]]; then
+    du -sh /workspace
+  fi
+
+  if [[ -d /root/c06_c36_ollama_workspace ]]; then
+    du -sh /root/c06_c36_ollama_workspace
+    ls -lah /root/c06_c36_ollama_workspace
+  fi
+
+  return 0
+
+}
+
+# NOTE 函数l78_du_root_and_workspace()的别名
+show(){
+  [[ -f $(which cloudstudio) ]] && l78_du_root_and_workspace || echo -e "show_不是cloudstudio的工作空间_无法执行"
+  return 0
+}
+
+# -------------------------------------------------------------------
+
 # NOTE 合并282个片段文件为ollama可执行文件.
 # NOTE ollama 下拉 千问_qwen_0.5b的模型大约377M
 # NOTE ollama运行上述模型
@@ -345,7 +368,7 @@ main(){
     echo -e "不是cloudstudio的工作空间_无法执行"
   fi
 
-  # [[ -f $(which cloudstuido) ]] && f92_2828_main || echo -e "不是cloudstudio的工作空间_无法执行"
+  # [[ -f $(which cloudstudio) ]] && f92_2828_main || echo -e "main_不是cloudstudio的工作空间_无法执行"
 
   return 0
 }
@@ -354,7 +377,7 @@ main(){
 # NOTE 目前与main()函数的内容是一样的
 c10_wmtask_runonce_set_env(){
 
-  [[ -f $(which cloudstudio) ]] && f92_2828_main || echo -e "不是cloudstudio的工作空间_无法执行"
+  [[ -f $(which cloudstudio) ]] && f92_2828_main || echo -e "c10_wmtask_runonce_set_env_不是cloudstudio的工作空间_无法执行"
 
   return 0
 }
