@@ -34,8 +34,8 @@ g20_if_git_clone_c06_c36_to_workspace(){
 
   if [[ -d ./b33_v0.1.29/ ]]; then
     if [[ ! -d /root/c06_c36_ollama_workspace/b33_v0.1.29 ]]; then
-      mkdir -p /root/c06_c36_ollama_workspace/b33_v0.1.29/
-      cp -r b33_v0.1.29 /root/c06_c36_ollama_workspace/b33_v0.1.29/
+      # mkdir -p /root/c06_c36_ollama_workspace/b33_v0.1.29/
+      cp -r ./b33_v0.1.29 /root/c06_c36_ollama_workspace/
     fi
   fi
 
