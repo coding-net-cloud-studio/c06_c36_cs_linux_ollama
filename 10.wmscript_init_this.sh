@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# 最小需要/root下有658M的空间
+# 在过程中需要的存储空间会超过658M很多
+
 # Linux下如何切割与合并大文件
 # https://blog.csdn.net/fengye_csdn/article/details/121050627
 
@@ -336,22 +339,23 @@ f92_2828_main(){
 
 # f92_2828_main的便捷名称
 main(){
-  if [[ -f $(which cloudstuido) ]]; then
+  if [[ -f $(which cloudstudio) ]]; then
     f92_2828_main
   else
     echo -e "不是cloudstudio的工作空间_无法执行"
   fi
+
+  # [[ -f $(which cloudstuido) ]] && f92_2828_main || echo -e "不是cloudstudio的工作空间_无法执行"
+
   return 0
 }
 
 # NOTE 本函数被make -f Makefile所调用
 # NOTE 目前与main()函数的内容是一样的
 c10_wmtask_runonce_set_env(){
-  if [[ -f $(which cloudstuido) ]]; then
-    f92_2828_main
-  else
-    echo -e "不是cloudstudio的工作空间_无法执行"
-  fi
+
+  [[ -f $(which cloudstudio) ]] && f92_2828_main || echo -e "不是cloudstudio的工作空间_无法执行"
+
   return 0
 }
 
