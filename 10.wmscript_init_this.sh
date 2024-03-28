@@ -102,6 +102,15 @@ g24_if_git_clone_c06_c36_to_any_directory(){
 
   fi
 
+  # NOTE 特殊的骚操作
+  # NOTE 这里需要git config --list中git已经配置了user等
+  # git init
+  # git add .
+  # git commit -m "wmtemp_这里是重建的_git仓库"
+  # git remote add origin https://github.com/coding-net-cloud-studio/c06_c36_cs_linux_ollama.git
+
+  # 如果以后需要恢复.git仓库内容_可以在这里尝试一下
+
   # NOTE 删除pyenv的一个设置
 
   # du -sh .
