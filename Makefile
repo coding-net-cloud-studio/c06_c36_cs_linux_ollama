@@ -5,19 +5,18 @@
 SHELL=/bin/bash
 
 # 下述都是makefile的伪目标
-.PHONY: default wmtask_runonce_set_env clean docker
 
 # ---------------------------------------------------------------------------------------
-
+.PHONY: default
 # 这是缺省运行make会被执行的目标
-default: wmtask_runonce_set_env
+default:
 	@echo "我啥都不做_怕出错"
 	@echo "使用帮助信息"
-	@echo "make               : 尝试用ollam运行千问qwen:0.5b模型"
+	@echo "make runonce       : 尝试用ollam运行千问qwen:0.5b模型"
 	@echo "make show          : 展示几个不同的目录下_占用的存储情况"
 
 # ---------------------------------------------------------------------------------------
-
+.PHONY: wmtask_runonce_set_env
 # 本目标运行一次时间很长的,系统环境设置脚本
 # NOTE 被.vscode/preview.yml所调用
 # NOTE 尝试用ollam运行千问qwen:0.5b模型
@@ -27,10 +26,14 @@ wmtask_runonce_set_env:
 	@echo -e "$$(pwd)/Makefile wmtask_runonce_set_env_目标_被运行\n"
 	@bash 10.wmscript_init_this.sh c10_wmtask_runonce_set_env 2nd参数 3rd参数
 
-# ---------------------------------------------------------------------------------------
+.PHONY: runonce
+# NOTE runonce就是wmtask_runonce_set_env的别名
+runonce: wmtask_runonce_set_env
 
+# ---------------------------------------------------------------------------------------
+.PHONY: help
 help:
 	@echo "我啥都不做_怕出错"
 	@echo "使用帮助信息"
-	@echo "make               : 尝试用ollam运行千问qwen:0.5b模型"
+	@echo "make runonce       : 尝试用ollam运行千问qwen:0.5b模型"
 	@echo "make show          : 展示几个不同的目录下_占用的存储情况"
