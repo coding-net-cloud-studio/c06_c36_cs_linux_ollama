@@ -21,7 +21,7 @@ pause_60_second(){
 }
 
 # -------------------------------------------------------------------
-
+# REVIEW 基本上被g24函数代替了_不被调用了_但是要保留
 # NOTE 非常特殊的一个案例
 # NOTE 当用club社区版_单独验证_本ollama与千问0.5b模型时候_才会执行本函数
 # NOTE cloudstudio的社区版club_把本c06_c36_cs_linux_ollama在创建工作空间的时候_放到了/workspace
@@ -61,6 +61,50 @@ g20_if_git_clone_c06_c36_to_workspace(){
   # NOTE 删除pyenv的一个设置
 
   # du -sh /workspace
+
+  # du -sh /root/c06_c36_ollama_workspace/
+
+  return 0
+}
+
+# NOTE 比较通用一些
+# NOTE 在cloudstudio的社区版本中_当git clone c06_c36_cs_linux_ollama到任意目录下的时候_使用本函数
+# NOTE 将代替g20函数
+g24_if_git_clone_c06_c36_to_any_directory(){
+  # NOTE 在cloudstudio的社区版本中_小存储空间的条件下_如何精细的操作
+
+  # NOTE 拷贝过去
+  # 这次拷贝没有带上.git目录_该目录下应该还有280M的空间占用_所有不拷贝这个
+
+  if [[ -d ./b33_v0.1.29/ ]]; then
+    if [[ ! -d /root/c06_c36_ollama_workspace/b33_v0.1.29 ]]; then
+      mkdir -p /root/c06_c36_ollama_workspace/b33_v0.1.29/
+      cp -r b33_v0.1.29 /root/c06_c36_ollama_workspace/
+    fi
+  fi
+
+  # 拷贝以后_如下目录应该有282M左右的内容
+  # /root/c06_c36_ollama_workspace/b33_v0.1.29/
+
+  # NOTE 释放/workspace下面的空间
+
+  if [[ -d ./b33_v0.1.29 ]]; then
+      # NOTE 把b33_v0.1.29当做特征标志_必须确认_位于_c06_c36_cs_linux_ollama_这个git仓库下面
+      if [[ -d ./.git ]]; then
+        # NOTE 释放282m的存储空间
+        rm -rf ./.git
+      fi
+      if [[ -f ./.python-version ]]; then
+        rm ./.python-version
+      fi
+    # NOTE 又释放另外的282M左右的磁盘存储空间
+    rm -rf ./b33_v0.1.29
+
+  fi
+
+  # NOTE 删除pyenv的一个设置
+
+  # du -sh .
 
   # du -sh /root/c06_c36_ollama_workspace/
 
@@ -329,7 +373,12 @@ f92_2828_main(){
   # NOTE 当用club社区版_单独验证_本ollama与千问0.5b模型时候_才会执行本函数
   # NOTE cloudstudio的社区版club_把本c06_c36_cs_linux_ollama在创建工作空间的时候_放到了/workspace
   # git clone https://github.com/coding-net-cloud-studio/c06_c36_cs_linux_ollama.git /workspace
-  g20_if_git_clone_c06_c36_to_workspace
+  # g20_if_git_clone_c06_c36_to_workspace
+
+  # NOTE 比较通用一些
+  # NOTE 在cloudstudio的社区版本中_当git clone c06_c36_cs_linux_ollama到任意目录下的时候_使用本函数
+  # NOTE 将代替g20函数
+  g24_if_git_clone_c06_c36_to_any_directory
 
   # NOTE 把大约282个文件切片_恢复为_ollama可执行文件
   l36_meld_splited_chunk_to_ollama
