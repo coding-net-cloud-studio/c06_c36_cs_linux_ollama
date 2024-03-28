@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Linux下如何切割与合并大文件
 # https://blog.csdn.net/fengye_csdn/article/details/121050627
@@ -34,8 +34,8 @@ g20_if_git_clone_c06_c36_to_workspace(){
 
   if [[ -d ./b33_v0.1.29/ ]]; then
     if [[ ! -d /root/c06_c36_ollama_workspace/b33_v0.1.29 ]]; then
-      # mkdir -p /root/c06_c36_ollama_workspace/b33_v0.1.29/
-      cp -r ./b33_v0.1.29 /root/c06_c36_ollama_workspace/
+      mkdir -p /root/c06_c36_ollama_workspace/b33_v0.1.29/
+      cp -r b33_v0.1.29 /root/c06_c36_ollama_workspace/
     fi
   fi
 
@@ -198,7 +198,8 @@ l54_ollama_run_model_qwen_0_5_b(){
         # NOTE 判断ollam服务已经启动起来了_才会继续进行到这个位置
         #  ps -ef | grep ollama | grep -v grep
         ollama list
-        ollama run qwen:0.5b
+        # NOTE 如下的ollama run会显示chat谈话类型的模式_会阻碍脚本向下继续运行
+        # ollama run qwen:0.5b
         # TODO 这里需要增加判断ollama_运行_千文_0.5b模型是否成功的语句
       fi
     fi
@@ -335,7 +336,22 @@ f92_2828_main(){
 
 # f92_2828_main的便捷名称
 main(){
-  f92_2828_main
+  if [[ -f $(which cloudstuido) ]]; then
+    f92_2828_main
+  else
+    echo -e "不是cloudstudio的工作空间_无法执行"
+  fi
+  return 0
+}
+
+# NOTE 本函数被make -f Makefile所调用
+# NOTE 目前与main()函数的内容是一样的
+c10_wmtask_runonce_set_env(){
+  if [[ -f $(which cloudstuido) ]]; then
+    f92_2828_main
+  else
+    echo -e "不是cloudstudio的工作空间_无法执行"
+  fi
   return 0
 }
 

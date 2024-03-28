@@ -2,7 +2,7 @@
 autoOpen: true # 打开工作空间时是否自动开启所有应用的预览
 apps:
   - port: 5000 # 应用的端口
-    run: "make -f Makefile wmtask_runonce_set_env"
+    run: "pip install -r requirement.txt && python3 preview.py"
     root: ./ # 应用的启动目录
     name: git_info_panel # 应用名称
     description: git_readme的公告板 # 应用描述
