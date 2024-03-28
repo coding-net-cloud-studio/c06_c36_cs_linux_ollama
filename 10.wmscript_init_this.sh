@@ -110,7 +110,7 @@ l36_meld_splited_chunk_to_ollama(){
 # root/c06_c36_ollama_workspace/b33_v0.1.29/目录下有282M左右的空间_给删除_释放空间
 l38_clean_root_c06_free_storage_space(){
 
-  if [[ -f /root/c06_c36_ollama_workspace/ollama ]];
+  if [[ -f /root/c06_c36_ollama_workspace/ollama ]]; then
     cd /root/c06_c36_ollama_workspace/
 
     # du -sh /root/c06_c36_ollama_workspace/
