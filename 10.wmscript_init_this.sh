@@ -124,7 +124,7 @@ l38_clean_root_c06_free_storage_space(){
       # NOTE 删除如下目录下的282M的内容_释放空间
       rm -rf /root/c06_c36_ollama_workspace/b33_v0.1.29/
     fi
-  then
+  fi
 
   return 0
 }
