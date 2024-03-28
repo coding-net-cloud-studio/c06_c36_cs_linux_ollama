@@ -33,8 +33,9 @@ g20_if_git_clone_c06_c36_to_workspace(){
   # 这次拷贝没有带上.git目录_该目录下应该还有280M的空间占用_所有不拷贝这个
 
   if [[ -d ./b33_v0.1.29/ ]]; then
-    if [[ ! -d /root/c06_c36_ollama_workspace/b33_v0.1.29/ ]]; then
-    cp -r b33_v0.1.29/ /root/c06_c36_ollama_workspace/
+    if [[ ! -d /root/c06_c36_ollama_workspace/b33_v0.1.29 ]]; then
+      mkdir -p /root/c06_c36_ollama_workspace/b33_v0.1.29/
+      cp -r b33_v0.1.29 /root/c06_c36_ollama_workspace/b33_v0.1.29/
     fi
   fi
 
