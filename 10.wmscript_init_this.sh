@@ -45,7 +45,7 @@ g20_if_git_clone_c06_c36_to_workspace(){
 
   if [[ -d /workspace/b33_v0.1.29 ]]; then
       # NOTE 把b33_v0.1.29当做特征标志_必须确认_位于_c06_c36_cs_linux_ollama_这个git仓库下面
-      if [[ -d /workspace/.git ]]
+      if [[ -d /workspace/.git ]]; then
         rm -rf /workspace/.git
       fi
       if [[ -f /workspace/.python-version ]]; then
